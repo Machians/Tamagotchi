@@ -1,7 +1,61 @@
+* {
+  font-family: Gin;
+}
+
 body {
   background-color: black;
 }
 
 #header {
+  font-size: 50px;
   color: rgb(255, 86, 114);
+  background: -webkit-radial-gradient(
+    rgb(255, 235, 238),
+    rgb(255, 76, 106),
+    rgb(255, 116, 23),
+    rgb(255, 137, 137),
+    rgb(255, 76, 106),
+    rgb(224, 19, 53)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  align-self: center;
+}
+
+#container {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#window {
+  background-color: rgb(0, 174, 255);
+  background: -webkit-radial-gradient(
+    rgb(181, 238, 255),
+    rgb(129, 226, 255),
+    rgb(0, 174, 255)
+  );
+  height: 300px;
+  width: 400px;
+  border-radius: 2px;
+  align-self: center;
+}
+
+#panel {
+  height: 100px;
+  width: 400px;
+  border-radius: 2px;
+  background-color: rgb(135, 231, 202);
+  background: -webkit-radial-gradient(
+    rgb(96, 255, 110),
+    rgb(49, 235, 120),
+    rgb(0, 185, 130)
+  );
+  align-self: center;
+}
+
+@font-face {
+  font-family: Gin;
+  src: url("Ginchiest.ttf");
 }
