@@ -47,7 +47,7 @@ body {
   display: flex;
 }
 
-#submit {
+.submit {
   padding: 10px;
   font-size: 25px;
   background-color: inherit;
@@ -58,12 +58,20 @@ body {
   outline: none;
 }
 
-#submit:hover {
+input:required {
+  background-color: red;
+}
+
+input:valid {
+  border: solid rgb(0, 109, 34) 2px;
+}
+
+.submit:hover {
   font-size: 30px;
   color: rgb(255, 235, 238);
 }
 
-#submit:focus {
+input:focus {
   font-size: 30px;
   color: rgb(255, 235, 238);
 }
