@@ -41,7 +41,7 @@ body {
   border-radius: 2px;
   align-self: center;
   margin-top: 11vh;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -115,28 +115,32 @@ body {
 #button:hover {
   cursor: pointer;
   color: white;
-  font-size: 40px;
+  font-size: 34px;
 }
 
 #openmenu {
   position: absolute;
   align-self: flex-end;
-  border: solid black 2px;
+  border: solid orange 2px;
   margin-top: 167px;
   font-size: 30px;
   z-index: 9;
   height: 141px;
-  width: 110px;
+  width: 105px;
   padding: 10px;
-  border-radius: 10px;
+  text-align: center;
+  border-radius: 40px;
   background-color: rgb(255, 86, 114);
+  display: none;
 }
 
 #menubutton {
   color: black;
+  transition: 0.2s;
 }
 
 #menubutton:hover {
+  font-size: 33px;
   cursor: pointer;
   color: rgb(255, 235, 238);
 }
