@@ -42,6 +42,14 @@ body {
   align-self: center;
 }
 
+#creatureslot {
+  position: relative;
+  left: 150px;
+  top: 200px;
+  height: 100px;
+  z-index: 3;
+}
+
 #panel {
   height: 100px;
   width: 400px;
@@ -53,6 +61,22 @@ body {
     rgb(0, 185, 130)
   );
   align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#button {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  transition: 0.3s;
+}
+
+#button:hover {
+  cursor: pointer;
+  color: white;
+  font-size: 40px;
 }
 
 @font-face {
