@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tamagotchi</title>
     <link id="stylesheet" rel="stylesheet" href="stylesheet.css" />
+    <script src="model.js"></script>
+    <script src="controller.js"></script>
 </head>
 <body>
     
@@ -15,7 +17,7 @@
         <div id="login">
             <input id="submit" type="text"/>
             <input id="submit" type="password"/>
-            <button id="submit" type="button">Log in</button>
+            <button id="submit" onclick="login()" type="button">Log in</button>
         </div>
 
         <div id="window">
@@ -34,8 +36,6 @@
             <div id="button">Vask</div>
             <div id="button">Meny</div>
         </div>
-
-        
 
     </div>
     
