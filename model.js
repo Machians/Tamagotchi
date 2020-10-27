@@ -11,7 +11,7 @@ const model = {
   birthdate: "",
   feeding: "",
   bathing: "",
-  growstage: [], //egg,child,grown,special
+  growstage: "", //egg,child,grown,special
 
   animals: [],
 
