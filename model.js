@@ -11,7 +11,7 @@ const model = {
   birthdate: "",
   feeding: "",
   bathing: "",
-  growstage: [], //egg,child,grown,special
+  growstage: "", //egg,child,grown,special
 
   animals: [],
 
@@ -25,6 +25,7 @@ const model = {
   nextbathlimit: "",
 
   menuopen: "no", //"yes"/"no"
+  foodmenuopen: "no", //"yes"/"no"
 
   userlist: [],
   tamalist: [],
