@@ -1,5 +1,5 @@
 const model = {
-  loggedin: "no", //"yes"/"no"
+  loggedin: "", //"yes"/"no"
   userid: "",
   username: "",
   password: "",
