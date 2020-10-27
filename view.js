@@ -1,6 +1,6 @@
 function updateView() {
   document.getElementById("container").innerHTML = `
-    <div id="header">Tamagotchi</div>
+    <div id="header">Tamaguccii</div>
 
     <div id="login">
         <input id="username" class="submit" type="text" placeholder="Brukernavn" required/>
