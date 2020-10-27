@@ -87,12 +87,13 @@ body {
   width: 400px;
   border-radius: 2px;
   align-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 #creatureslot {
-  position: relative;
-  left: 150px;
-  top: 215px;
+  align-self: center;
+  margin-top: 230px;
   height: 100px;
   z-index: 3;
   animation-duration: 1.5s;
@@ -177,6 +178,16 @@ body {
   display: none;
 }
 
+#vask {
+  position: absolute;
+  align-self: center;
+  display: none;
+  z-index: 8;
+  height: 100px;
+  animation: wash 1s infinite;
+  animation-timing-function: ease-in-out;
+}
+
 @font-face {
   font-family: Gin;
   src: url("/bilderogstash/Ginchiest.ttf");
@@ -206,5 +217,14 @@ body {
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+  }
+}
+
+@keyframes wash {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(110px);
   }
 }
