@@ -1,12 +1,12 @@
 function updateView() {
-    document.getElementById('container').innerHTML = `
+  document.getElementById("container").innerHTML = `
     <div id="header">Tamagotchi</div>
 
-    <form onsubmit="login():return false" id="login">
+    <div id="login">
         <input id="username" class="submit" type="text" placeholder="Brukernavn" required/>
         <input id="password" class="submit" type="password" placeholder="Passord" required/>
-        <button id="loginbutton" class="submit">Log in</button>
-    </form>
+        <button id="loginbutton" onclick="login()" class="submit">Log in</button>
+    </div>
 
     <div id="window">
         <img id="creatureslot" src="/bilderogstash/egg.png"/>

@@ -1,29 +1,29 @@
 const model = {
-    userid: "",
-    username: "",
-    password: "",
-    firstlogin: "",
-    date: "",
+  loggedin: "no", //"yes"/"no"
+  userid: "",
+  username: "",
+  password: "",
+  firstlogin: "",
+  date: "",
 
-    
-    animalid: "", 
-    animalname: "",
-    birthdate: "", 
-    feeding: "", 
-    bathing: "", 
-    growstage: [], //egg,child,grown,special
+  animalid: "",
+  animalname: "",
+  birthdate: "",
+  feeding: "",
+  bathing: "",
+  growstage: [], //egg,child,grown,special
 
-    animals: [],
+  animals: [],
 
-    lastlogin: "", 
-    nextloginlimit: "", 
-    lastfeeding: "",
-    nextfeedinglimit: "",
-    lastplay: "",
-    nextplay: "", 
-    lastbath: "", 
-    nextbathlimit: "",
+  lastlogin: "",
+  nextloginlimit: "",
+  lastfeeding: "",
+  nextfeedinglimit: "",
+  lastplay: "",
+  nextplay: "",
+  lastbath: "",
+  nextbathlimit: "",
 
-    userlist: [],
-    tamalist: [],
-}
+  userlist: [],
+  tamalist: [],
+};
