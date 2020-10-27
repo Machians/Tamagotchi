@@ -12,6 +12,7 @@ const model = {
   feeding: "",
   bathing: "",
   growstage: "", //egg,child,grown,special
+  album: ["", "", "", ""], //should contain growth history in images.
 
   animals: [],
 

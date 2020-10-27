@@ -8,6 +8,7 @@ function login() {
     model.loggedin = "yes";
     model.username = username.value;
     model.password = password.value;
+    model.firstlogin = dateandtime();
   } else {
     model.loggedin = "no";
   }
@@ -41,6 +42,8 @@ function newegg() {
   creatureslot.setAttribute("src", egg);
   model.growstage = "egg";
   model.birthdate = dateandtime();
+  model.album[0] = egg;
+  console.log(model.album);
 }
 
 function randomegg() {
