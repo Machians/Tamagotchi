@@ -58,12 +58,12 @@ body {
   outline: none;
 }
 
-input:required {
-  background-color: red;
+.submit:required {
+  border: solid rgb(255, 0, 106) 2px;
 }
 
-input:valid {
-  border: solid rgb(0, 109, 34) 2px;
+.submit:valid {
+  border: solid rgb(0, 255, 81) 2px;
 }
 
 .submit:hover {
@@ -71,7 +71,7 @@ input:valid {
   color: rgb(255, 235, 238);
 }
 
-input:focus {
+.submit:focus {
   font-size: 30px;
   color: rgb(255, 235, 238);
 }
