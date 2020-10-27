@@ -13,13 +13,24 @@ function login() {
   }
 }
 
-function openmenu() {
+function openmenu(clickedmenubutton) {
   let menu = document.getElementById("openmenu");
-  if (model.menuopen == "no") {
-    menu.style.display = "block";
-    model.menuopen = "yes";
+  if (clickedmenubutton.innerHTML == "Meny") {
+    if (model.menuopen == "no") {
+      menu.style.display = "block";
+      model.menuopen = "yes";
+    } else {
+      menu.style.display = "none";
+      model.menuopen = "no";
+    }
   } else {
-    menu.style.display = "none";
-    model.menuopen = "no";
+    let foodmenu = document.getElementById("foodmenu");
+    if (model.foodmenuopen == "no") {
+      foodmenu.style.display = "block";
+      model.foodmenuopen = "yes";
+    } else {
+      foodmenu.style.display = "none";
+      model.foodmenuopen = "no";
+    }
   }
 }

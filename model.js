@@ -25,6 +25,7 @@ const model = {
   nextbathlimit: "",
 
   menuopen: "no", //"yes"/"no"
+  foodmenuopen: "no", //"yes"/"no"
 
   userlist: [],
   tamalist: [],
