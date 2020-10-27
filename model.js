@@ -24,6 +24,8 @@ const model = {
   lastbath: "",
   nextbathlimit: "",
 
+  menuopen: "no", //"yes"/"no"
+
   userlist: [],
   tamalist: [],
 };
