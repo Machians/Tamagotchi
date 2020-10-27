@@ -1,18 +1,18 @@
 * {
-  font-family: Gin;
+  font-family: Fip;
 }
 
 body {
-  background-color: black;
+  background-color: rgb(24, 23, 23);
   display: flex;
   justify-content: center;
 }
 
 #header {
-  font-size: 50px;
+  font-size: 30px;
+  padding-right: 120px;
   color: rgb(255, 86, 114);
   background: -webkit-radial-gradient(
-    rgb(255, 235, 238),
     rgb(255, 76, 106),
     rgb(255, 116, 23),
     rgb(255, 137, 137),
@@ -49,7 +49,7 @@ body {
 
 .submit {
   padding: 10px;
-  font-size: 25px;
+  font-size: 16px;
   background-color: inherit;
   border: solid rgb(255, 221, 198) 2px;
   border-radius: 40px;
@@ -67,12 +67,7 @@ body {
 }
 
 .submit:hover {
-  font-size: 30px;
-  color: rgb(255, 235, 238);
-}
-
-.submit:focus {
-  font-size: 30px;
+  font-size: 20px;
   color: rgb(255, 235, 238);
 }
 
@@ -87,12 +82,13 @@ body {
   width: 400px;
   border-radius: 2px;
   align-self: center;
+  display: flex;
+  justify-content: center;
 }
 
 #creatureslot {
-  position: relative;
-  left: 150px;
-  top: 215px;
+  align-self: center;
+  margin-top: 210px;
   height: 100px;
   z-index: 3;
   animation-duration: 1.5s;
@@ -105,48 +101,50 @@ body {
 }
 
 #panel {
-  height: 100px;
+  height: 70px;
   width: 400px;
   border-radius: 2px;
-  background-color: rgb(135, 231, 202);
   background: -webkit-radial-gradient(
-    rgb(96, 255, 110),
-    rgb(49, 235, 120),
-    rgb(0, 185, 130)
+    rgb(255, 93, 174),
+    rgb(213, 139, 219),
+    rgb(60, 156, 235)
   );
-  align-self: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 #button {
   color: rgb(0, 0, 0);
-  font-size: 30px;
+  font-size: 20px;
   transition: 0.3s;
 }
 
 #button:hover {
   cursor: pointer;
   color: white;
-  font-size: 34px;
+  font-size: 25px;
 }
 
 #openmenu {
   position: absolute;
-  align-self: flex-end;
-  border: solid orange 3px;
-  margin-top: 167px;
-  font-size: 30px;
+  align-self: center;
+  margin-top: 215px;
+  margin-left: 310px;
   z-index: 9;
-  height: 141px;
-  width: 105px;
-  padding: 10px;
+  height: 121px;
+  width: 100px;
+  padding: 3px;
   text-align: center;
   border-radius: 40px;
-  background-color: rgb(255, 86, 114);
+  background: -webkit-linear-gradient(rgb(0, 174, 255), rgb(155, 138, 255));
+  opacity: 0.9;
+  border: solid rgb(155, 138, 255) 3px;
   display: none;
+  font-size: 12px;
 }
 
 #menubutton {
@@ -155,31 +153,47 @@ body {
 }
 
 #menubutton:hover {
-  font-size: 33px;
+  font-size: 14px;
   cursor: pointer;
   color: rgb(255, 235, 238);
 }
 
 #foodmenu {
   position: absolute;
-  align-self: flex-end;
-  border: solid orange 3px;
-  margin-top: 220px;
-  margin-right: 269px;
-  font-size: 30px;
+  align-self: center;
+  margin-top: 245px;
+  margin-left: -318px;
+  font-size: 13px;
   z-index: 9;
-  height: 90px;
-  width: 105px;
-  padding: 10px;
+  height: 93px;
+  width: 100px;
+  padding: 2px;
   text-align: center;
   border-radius: 40px;
-  background-color: rgb(255, 86, 114);
+  background: -webkit-linear-gradient(rgb(0, 174, 255), rgb(155, 138, 255));
+  opacity: 0.9;
+  border: solid rgb(155, 138, 255) 3px;
   display: none;
+}
+
+#vask {
+  position: absolute;
+  align-self: center;
+  display: none;
+  z-index: 8;
+  height: 100px;
+  animation: wash 1s infinite;
+  animation-timing-function: ease-in-out;
 }
 
 @font-face {
   font-family: Gin;
   src: url("/bilderogstash/Ginchiest.ttf");
+}
+
+@font-face {
+  font-family: Fip;
+  src: url("/bilderogstash/Fipps-Regular.otf");
 }
 
 @keyframes wobble {
@@ -206,5 +220,14 @@ body {
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+  }
+}
+
+@keyframes wash {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(110px);
   }
 }

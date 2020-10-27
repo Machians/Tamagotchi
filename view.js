@@ -1,6 +1,6 @@
 function updateView() {
   document.getElementById("container").innerHTML = `
-    <div id="header">Tamagotchi</div>
+    <div id="header">Tamaguccii</div>
 
     <div id="login">
         <input id="username" class="submit" type="text" placeholder="Brukernavn" required/>
@@ -26,8 +26,10 @@ function updateView() {
     <div id="panel">
         <div id="button" onclick="openmenu(this)">Mat</div>
         <div id="button">Lek</div>
-        <div id="button">Vask</div>
+        <div id="button" onclick="wash()">Vask</div>
         <div id="button" onclick="openmenu(this)">Meny</div>
     </div>
+
+    <img id="vask" src="/bilderogstash/vask.png"></img>
     `;
 }

@@ -8,6 +8,7 @@ function login() {
     model.loggedin = "yes";
     model.username = username.value;
     model.password = password.value;
+    model.firstlogin = dateandtime();
   } else {
     model.loggedin = "no";
   }
@@ -41,6 +42,7 @@ function newegg() {
   creatureslot.setAttribute("src", egg);
   model.growstage = "egg";
   model.birthdate = dateandtime();
+  model.album[0] = egg;
 }
 
 function randomegg() {
@@ -64,4 +66,13 @@ function dateandtime() {
   let s = date.getSeconds();
 
   return d + "." + m + "." + y + " " + h + ":" + min + ":" + s;
+}
+
+function wash() {
+  let vask = document.getElementById("vask");
+  vask.style.display = "block";
+  model.lastbath = dateandtime();
+  setTimeout(function () {
+    vask.style.display = "none";
+  }, 1000);
 }
