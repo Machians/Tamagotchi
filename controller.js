@@ -70,9 +70,28 @@ function dateandtime() {
 
 function wash() {
   let vask = document.getElementById("vask");
+  let glitter1 = document.getElementById("glitter1");
+  let glitter2 = document.getElementById("glitter2");
   vask.style.display = "block";
+  glitter1.style.display = "none";
+  glitter2.style.display = "none";
   model.lastbath = dateandtime();
+
   setTimeout(function () {
     vask.style.display = "none";
+    glitter1.style.display = "block";
+    glitter2.style.display = "none";
+  }, 499);
+  setTimeout(function () {
+    glitter1.style.display = "none";
+    glitter2.style.display = "block";
   }, 1000);
+  setTimeout(function () {
+    glitter1.style.display = "block";
+    glitter2.style.display = "block";
+  }, 1250);
+  setTimeout(function () {
+    glitter1.style.display = "none";
+    glitter2.style.display = "none";
+  }, 2000);
 }

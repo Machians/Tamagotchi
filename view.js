@@ -30,6 +30,8 @@ function updateView() {
         <div id="button" onclick="openmenu(this)">Meny</div>
     </div>
 
-    <img id="vask" src="/bilderogstash/vask.png"></img>
+    <img id="vask" src="/bilderogstash/vask.png"/>
+    <img id="glitter1" class="glitter" src="/bilderogstash/glitter1.png"/>
+    <img id="glitter2" class="glitter" src="/bilderogstash/glitter2.png"/>
     `;
 }

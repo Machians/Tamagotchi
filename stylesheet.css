@@ -1,5 +1,6 @@
 * {
   font-family: Fip;
+  user-select: none;
 }
 
 body {
@@ -182,8 +183,19 @@ body {
   display: none;
   z-index: 8;
   height: 100px;
-  animation: wash 1s infinite;
-  animation-timing-function: ease-in-out;
+  animation: wash 0.5s;
+  animation-timing-function: ease-out;
+}
+
+.glitter {
+  position: absolute;
+  padding-top: 206px;
+  padding-right: 26px;
+  align-self: center;
+  display: none;
+  z-index: 8;
+  height: 100px;
+  animation: sparkle 1s infinite;
 }
 
 @font-face {
@@ -225,9 +237,21 @@ body {
 
 @keyframes wash {
   0% {
-    transform: translateY(-100px);
+    transform: translateY(-10px);
   }
   100% {
-    transform: translateY(110px);
+    transform: translateY(130px);
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
