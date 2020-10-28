@@ -10,6 +10,8 @@ function updateView() {
 
     <div id="window">
         <img id="creatureslot" src="/bilderogstash/egg.png"/>
+        <img id="leke" src="/bilderogstash/leke.png"/>
+        <img id="hjerte" src="/bilderogstash/hjerte.png"/>
     </div>
 
     <div id="openmenu" >
@@ -25,7 +27,7 @@ function updateView() {
 
     <div id="panel">
         <div id="button" onclick="openmenu(this)">Mat</div>
-        <div id="button">Lek</div>
+        <div id="button" onclick="play()">Lek</div>
         <div id="button" onclick="wash()">Vask</div>
         <div id="button" onclick="openmenu(this)">Meny</div>
     </div>

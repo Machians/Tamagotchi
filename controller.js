@@ -96,3 +96,22 @@ function wash() {
     glitter2.style.display = "none";
   }, 2000);
 }
+
+function play() {
+  let leke = document.getElementById("leke");
+  let hjerte = document.getElementById("hjerte");
+  model.lastplay = dateandtime();
+  leke.style.display = "block";
+  hjerte.style.display = "none";
+  setTimeout(function () {
+    hjerte.style.display = "block";
+  }, 3000);
+
+  setTimeout(function () {
+    leke.style.display = "none";
+  }, 4000);
+
+  setTimeout(function () {
+    hjerte.style.display = "none";
+  }, 4500);
+}
