@@ -10,8 +10,9 @@ const model = {
   animalname: "",
   birthdate: "",
   feeding: "",
-  bathing: "",
+  needsbathing: "", //yes/no
   growstage: "", //egg,child,grown,special
+  dead: "", //yes/no
   album: ["", "", "", ""], //should contain growth history in images.
 
   animals: [],

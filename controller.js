@@ -72,10 +72,11 @@ function wash() {
   let vask = document.getElementById("vask");
   let glitter1 = document.getElementById("glitter1");
   let glitter2 = document.getElementById("glitter2");
+  model.lastbath = dateandtime();
+  // wash animation:
   vask.style.display = "block";
   glitter1.style.display = "none";
   glitter2.style.display = "none";
-  model.lastbath = dateandtime();
 
   setTimeout(function () {
     vask.style.display = "none";
