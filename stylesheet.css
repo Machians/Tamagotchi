@@ -37,7 +37,8 @@ body {
   position: absolute;
   z-index: 10;
   background-color: rgb(129, 226, 255);
-  height: 400px;
+  padding-top: 10px;
+  height: 360px;
   width: 400px;
   border-radius: 2px;
   align-self: center;
@@ -49,14 +50,16 @@ body {
 }
 
 .submit {
-  padding: 10px;
-  font-size: 16px;
+  padding: 8px;
+  font-size: 14px;
   background-color: inherit;
   border: solid rgb(255, 221, 198) 2px;
   border-radius: 40px;
+  padding-bottom: 18px;
   margin-bottom: 10px;
   transition: 0.2s;
   outline: none;
+  text-align: center;
 }
 
 .submit:required {
@@ -68,7 +71,7 @@ body {
 }
 
 .submit:hover {
-  font-size: 20px;
+  font-size: 16px;
   color: rgb(255, 235, 238);
 }
 
