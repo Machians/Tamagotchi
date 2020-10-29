@@ -9,10 +9,9 @@ const model = {
   animalid: "",
   animalname: "",
   birthdate: "",
-  feeding: "",
-  needsbathing: "", //yes/no
-  growstage: "", //egg,child,grown,special
+  sad: "", //yes/no
   dead: "", //yes/no
+  growstage: "", //egg,child,grown,special
   album: ["", "", "", ""], //should contain growth history in images.
 
   animals: [],
@@ -22,7 +21,7 @@ const model = {
   lastfeeding: "",
   nextfeedinglimit: "",
   lastplay: "",
-  nextplay: "",
+  nextplaylimit: "",
   lastbath: "",
   nextbathlimit: "",
 

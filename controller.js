@@ -89,6 +89,7 @@ function wash() {
   let glitter1 = document.getElementById("glitter1");
   let glitter2 = document.getElementById("glitter2");
   model.lastbath = today();
+  model.nextbathlimit = tomorrow();
   // wash animation:
   vask.style.display = "block";
   glitter1.style.display = "none";
@@ -118,6 +119,7 @@ function play() {
   let leke2 = document.getElementById("leke2");
   let hjerte = document.getElementById("hjerte");
   model.lastplay = today();
+  model.nextplaylimit = tomorrow();
   leke.style.display = "block";
   leke2.style.display = "block";
   hjerte.style.display = "none";
@@ -143,4 +145,5 @@ function feed(food) {
     valgtmat.style.display = "none";
   }, 1500);
   model.lastfeeding = today();
+  model.nextfeedinglimit = tomorrow();
 }
