@@ -12,6 +12,8 @@ function updateView() {
         <img id="creatureslot" src="/bilderogstash/egg.png"/>
         <img id="leke" src="/bilderogstash/leke.png"/>
         <img id="hjerte" src="/bilderogstash/hjerte.png"/>
+        <img id="Rødbete" src="/bilderogstash/Rødbete.png"/>
+        <img id="Salat" src="/bilderogstash/Salat.png"/>
     </div>
 
     <div id="openmenu" >
@@ -21,8 +23,8 @@ function updateView() {
     </div>
 
     <div id="foodmenu" >
-        <div id="menubutton">Rødbete</div>
-        <div id="menubutton">Salat</div>
+        <div id="menubutton" onclick="feed(this)">Rødbete</div>
+        <div id="menubutton" onclick="feed(this)">Salat</div>
     </div>
 
     <div id="panel">

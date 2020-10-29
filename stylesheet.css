@@ -220,6 +220,24 @@ body {
   animation: scale 1.5s infinite ease-in-out, sparkle 1.5s infinite;
 }
 
+#Rødbete {
+  position: absolute;
+  align-self: center;
+  display: none;
+  z-index: 4;
+  height: 80px;
+  animation: scale 1.5s infinite ease-in-out, sparkle 1.5s infinite;
+}
+
+#Salat {
+  position: absolute;
+  align-self: center;
+  display: none;
+  z-index: 4;
+  height: 80px;
+  animation: scale 1.5s infinite ease-in-out, sparkle 1.5s infinite;
+}
+
 @font-face {
   font-family: Gin;
   src: url("/bilderogstash/Ginchiest.ttf");

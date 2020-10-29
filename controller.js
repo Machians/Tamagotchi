@@ -38,11 +38,18 @@ function openmenu(clickedmenubutton) {
 
 function newegg() {
   let creatureslot = document.getElementById("creatureslot");
-  let egg = randomegg();
-  creatureslot.setAttribute("src", egg);
-  model.growstage = "egg";
-  model.birthdate = dateandtime();
-  model.album[0] = egg;
+
+  if (
+    creatureslot.getAttribute("src") == "/bilderogstash/egg.png" ||
+    "/bilderogstash/egg2.png" ||
+    "/bilderogstash/egg3.png"
+  ) {
+    let egg = randomegg();
+    creatureslot.setAttribute("src", egg);
+    model.growstage = "egg";
+    model.birthdate = dateandtime();
+    model.album[0] = egg;
+  }
 }
 
 function randomegg() {
@@ -114,4 +121,14 @@ function play() {
   setTimeout(function () {
     hjerte.style.display = "none";
   }, 4500);
+}
+
+function feed(food) {
+  var mat = food.innerHTML;
+  let valgtmat = document.getElementById(mat);
+  valgtmat.style.display = "block";
+  setTimeout(function () {
+    valgtmat.style.display = "none";
+  }, 1500);
+  model.lastfeeding = dateandtime();
 }
