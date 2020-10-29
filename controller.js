@@ -8,7 +8,7 @@ function login() {
     model.loggedin = "yes";
     model.username = username.value;
     model.password = password.value;
-    model.firstlogin = dateandtime();
+    model.firstlogin = today();
   } else {
     model.loggedin = "no";
   }
@@ -47,7 +47,7 @@ function newegg() {
     let egg = randomegg();
     creatureslot.setAttribute("src", egg);
     model.growstage = "egg";
-    model.birthdate = dateandtime();
+    model.birthdate = today();
     model.album[0] = egg;
   }
 }
@@ -62,24 +62,34 @@ function randomegg() {
   return eggs[randomegg];
 }
 
-function dateandtime() {
-  var date = new Date();
-  let d = date.getDate();
-  let m = date.getMonth() + 1;
-  let y = date.getFullYear();
+function today() {
+  var today = new Date();
+  today.setDate(today.getDate());
+  return today;
+  // var date = new Date();
+  // let d = date.getDate();
+  // let m = date.getMonth() + 1;
+  // let y = date.getFullYear();
 
-  let h = date.getHours();
-  let min = date.getMinutes();
-  let s = date.getSeconds();
+  // let h = date.getHours();
+  // let min = date.getMinutes();
+  // let s = date.getSeconds();
 
-  return d + "." + m + "." + y + " " + h + ":" + min + ":" + s;
+  // return d + "." + m + "." + y + " " + h + ":" + min + ":" + s;
+}
+
+function tomorrow() {
+  var tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  return tomorrow;
 }
 
 function wash() {
   let vask = document.getElementById("vask");
   let glitter1 = document.getElementById("glitter1");
   let glitter2 = document.getElementById("glitter2");
-  model.lastbath = dateandtime();
+  model.lastbath = today();
+  model.nextbathlimit = tomorrow();
   // wash animation:
   vask.style.display = "block";
   glitter1.style.display = "none";
@@ -106,9 +116,12 @@ function wash() {
 
 function play() {
   let leke = document.getElementById("leke");
+  let leke2 = document.getElementById("leke2");
   let hjerte = document.getElementById("hjerte");
-  model.lastplay = dateandtime();
+  model.lastplay = today();
+  model.nextplaylimit = tomorrow();
   leke.style.display = "block";
+  leke2.style.display = "block";
   hjerte.style.display = "none";
   setTimeout(function () {
     hjerte.style.display = "block";
@@ -116,6 +129,7 @@ function play() {
 
   setTimeout(function () {
     leke.style.display = "none";
+    leke2.style.display = "none";
   }, 4000);
 
   setTimeout(function () {
@@ -130,5 +144,6 @@ function feed(food) {
   setTimeout(function () {
     valgtmat.style.display = "none";
   }, 1500);
-  model.lastfeeding = dateandtime();
+  model.lastfeeding = today();
+  model.nextfeedinglimit = tomorrow();
 }

@@ -213,6 +213,18 @@ body {
   animation: rotate 1s infinite ease-in-out, sparkle2 4s infinite;
 }
 
+#leke2 {
+  position: absolute;
+  padding-bottom: 100px;
+  margin-top: 105px;
+  margin-left: -30px;
+  align-self: center;
+  display: none;
+  z-index: 4;
+  height: 100px;
+  animation: rotate 1s infinite ease-in-out, sparkle 0.5s infinite ease;
+}
+
 #hjerte {
   position: absolute;
   align-self: center;
