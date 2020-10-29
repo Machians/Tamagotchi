@@ -65,7 +65,7 @@ function randomegg() {
 function today() {
   var today = new Date();
   today.setDate(today.getDate());
-  console.log(today);
+  return today;
   // var date = new Date();
   // let d = date.getDate();
   // let m = date.getMonth() + 1;
@@ -81,7 +81,7 @@ function today() {
 function tomorrow() {
   var tomorrow = new Date();
   tomorrow.setDate(tomorrow.getDate() + 1);
-  console.log(tomorrow);
+  return tomorrow;
 }
 
 function wash() {
