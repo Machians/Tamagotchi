@@ -115,3 +115,15 @@ function play() {
     hjerte.style.display = "none";
   }, 4500);
 }
+
+function grow() {}
+
+function randombaby() {
+  var babies = new Array(
+    "/bilderogstash/babydelfin.png",
+    "/bilderogstash/babyrev.png",
+    "/bilderogstash/babysel.png"
+  );
+  var random = Math.floor(Math.random() * 3);
+  return babies[random];
+}

@@ -9,7 +9,7 @@ function updateView() {
     </div>
 
     <div id="window">
-        <img id="creatureslot" src="/bilderogstash/rev.png"/>
+        <img id="creatureslot" src="/bilderogstash/egg.png"/>
         <img id="leke" src="/bilderogstash/leke.png"/>
         <img id="leke2" src="/bilderogstash/leke2.png"/>
         <img id="hjerte" src="/bilderogstash/hjerte.png"/>

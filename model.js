@@ -13,6 +13,7 @@ const model = {
   dead: "", //yes/no
   growstage: "", //egg,child,grown,special
   album: ["", "", "", ""], //should contain growth history in images.
+  timesfed: "",
 
   animals: [],
 
