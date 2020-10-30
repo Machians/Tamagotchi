@@ -146,4 +146,25 @@ function feed(food) {
   }, 1500);
   model.lastfeeding = today();
   model.nextfeedinglimit = tomorrow();
+  grow();
+}
+
+function grow() {
+  let creatureslot = document.getElementById("creatureslot");
+  let baby = randombaby();
+  if (model.growstage == "egg") {
+    creatureslot.setAttribute("src", baby);
+    model.growstage = "baby";
+    model.album[1] = baby;
+  }
+}
+
+function randombaby() {
+  var babies = new Array(
+    "/bilderogstash/babydelfin.png",
+    "/bilderogstash/babyrev.png",
+    "/bilderogstash/babysel.png"
+  );
+  var random = Math.floor(Math.random() * 3);
+  return babies[random];
 }

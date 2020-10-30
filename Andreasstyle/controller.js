@@ -116,7 +116,19 @@ function play() {
   }, 4500);
 }
 
-function grow() {}
+function grow() {
+  let creatureslot = document.getElementById("creatureslot");
+  let baby = randombaby();
+  if (
+    (creatureslot.getAttribute("src") == "/bilderogstash/egg.png",
+    "/bilderogstash/egg2.png",
+    "/bilderogstash/egg3.png")
+  ) {
+    creatureslot.setAttribute("src", baby);
+    model.useranimals.growtstage = "baby";
+    model.album[1] = baby;
+  }
+}
 
 function randombaby() {
   var babies = new Array(
@@ -127,6 +139,7 @@ function randombaby() {
   var random = Math.floor(Math.random() * 3);
   return babies[random];
 }
+
 async function savegame() {
   $.ajax({
     type: "POST",
