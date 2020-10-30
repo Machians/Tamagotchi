@@ -58,7 +58,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603960028550</updated>
-      <workItem from="1603960030700" duration="11396000" />
+      <workItem from="1603960030700" duration="11953000" />
+      <workItem from="1604042811411" duration="7568000" />
     </task>
     <servers />
   </component>
@@ -75,15 +76,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1180" y="275" key="FileChooserDialogImpl" timestamp="1603961038878">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1180" y="275" key="FileChooserDialogImpl/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603961038878" />
-    <state x="-1126" y="443" key="NewPhpFileDialog" timestamp="1603977348585">
+    <state x="-1126" y="443" key="NewPhpFileDialog" timestamp="1604048324110">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1126" y="443" key="NewPhpFileDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1603977348585" />
+    <state x="-1126" y="443" key="NewPhpFileDialog/0.0.1536.824/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1604048324110" />
   </component>
 </project>

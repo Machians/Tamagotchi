@@ -15,7 +15,7 @@ function updateView() {
     </div>
 
     <div id="openmenu" >
-        <div id="menubutton">Lagre</div>
+        <div id="menubutton" onclick="savegame()">Lagre</div>
         <div id="menubutton">Stats</div>
         <div id="menubutton" onclick="newegg()">Nytt egg</div>
     </div>
