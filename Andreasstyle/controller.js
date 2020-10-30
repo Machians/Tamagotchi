@@ -6,8 +6,8 @@ function login() {
     let login = document.getElementById("login");
     login.style.display = "none";
     model.loggedin = "yes";
-    model.username = username.value;
-    model.password = password.value;
+    model.users.username = username.value;
+    model.users.password = password.value;
     model.firstlogin = dateandtime();
   } else {
     model.loggedin = "no";
@@ -40,8 +40,8 @@ function newegg() {
   let creatureslot = document.getElementById("creatureslot");
   let egg = randomegg();
   creatureslot.setAttribute("src", egg);
-  model.growstage = "egg";
-  model.birthdate = dateandtime();
+  model.useranimals.growtstage = "egg";
+  model.useranimals.birthdate = dateandtime();
   model.album[0] = egg;
 }
 
@@ -72,7 +72,7 @@ function wash() {
   let vask = document.getElementById("vask");
   let glitter1 = document.getElementById("glitter1");
   let glitter2 = document.getElementById("glitter2");
-  model.lastbath = dateandtime();
+  model.useranimals.lastplay = dateandtime();
   // wash animation:
   vask.style.display = "block";
   glitter1.style.display = "none";
@@ -100,7 +100,7 @@ function wash() {
 function play() {
   let leke = document.getElementById("leke");
   let hjerte = document.getElementById("hjerte");
-  model.lastplay = dateandtime();
+  model.useranimals.lastplay = dateandtime();
   leke.style.display = "block";
   hjerte.style.display = "none";
   setTimeout(function () {
@@ -114,4 +114,16 @@ function play() {
   setTimeout(function () {
     hjerte.style.display = "none";
   }, 4500);
+}
+
+async function savegame(){
+  $.ajax({
+    type: "POST",
+    url: 'updateuseradb.php',
+    data: model.useranimals,
+    success: function (data) {
+      alert(data);
+    }
+  });
+  getData();
 }
